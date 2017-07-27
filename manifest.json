@@ -1,0 +1,35 @@
+﻿{
+	"name": "Greed_Avito_Parser",
+	"version": "1.0.1",
+
+	"manifest_version": 2,
+
+	"permissions": [ "storage" ],
+
+	"icons": {
+		"19": "/img/icon19.png",
+		"38": "/img/icon38.png",
+		"48": "/img/icon48.png",
+		"64": "/img/icon.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": [ "https://m.avito.ru/*" ],
+			"js": [ "js/loader.js" ],
+			"run_at": "document_end"
+		}
+	],
+
+	"web_accessible_resources": [ "js/ext-all.js", "js/fix-ext-use-strict.js", "js/lib.js", "js/ui.js", "js/run.js", "css/all.css" ] /*,
+
+	"background": { "scripts": [ "js/background.js" ] },
+	
+	"page_action": {
+		"default_icon": {
+			"19": "/img/icon19.png",
+			"38": "/img/icon38.png"
+		},
+		"default_title": "Greed_Web_Auctionator"
+	}*/
+}

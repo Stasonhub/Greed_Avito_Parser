@@ -1,0 +1,1 @@
+﻿GreedAucLib.urlRun = location.href
